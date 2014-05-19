@@ -113,7 +113,7 @@ T* aligned_malloc(size_t size) {
     int result = posix_memalign(&ptr, alignment, size*sizeof(T));
     if(result)
         ptr=nullptr;
-    return static_cast<T*>(ptr);
+    return reinterpret_cast<T*>(ptr);
 }
 
 template <typename T>
