@@ -100,12 +100,15 @@ struct minimum_possible_alignment
     static const size_t value = pot < sizeof(void*) ? sizeof(void*) : pot;
 };
 
-//template <typename T, size_t alignment=round_up_power_of_two<sizeof(T)>::value >
+// function that allocates memory with alignment specified as a template parameter
 template <typename T, size_t alignment=minimum_possible_alignment<sizeof(T)>::value >
 T* aligned_malloc(size_t size) {
     // double check that alignment is a multiple of sizeof(void*), as this is a prerequisite
     // for posix_memalign()
-    static_assert( !(alignment%sizeof(void*)), "aligned_malloc : alignment is not a multiple of sizeof(void*)");
+    static_assert( !(alignment%sizeof(void*)),
+            "alignment is not a multiple of sizeof(void*)");
+    static_assert( is_power_of_two<alignment>::value,
+            "alignment is not a power of two");
     void *ptr;
     int result = posix_memalign(&ptr, alignment, size*sizeof(T));
     if(result)
@@ -181,6 +184,10 @@ int main(void) {
     align_by_type<fourpack<double>>(128);
 
     align_by_type<fourpack<long long>>(128);
+
+    // uncommet these to trigger compile time assertions
+    //aligned_malloc<char, 3>(200);     // alignment is not multiple of sizeof(void*)
+    //aligned_malloc<char, 24>(200);    // alignment is not power of two
 
     return 0;
 }
