@@ -1,0 +1,1282 @@
+g++ -std=c++11 align_test.cpp -o align_test
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 0>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: incomplete type 'next_power_of_two<0ul, 0>' used in nested name specifier
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, -2147483648>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 0>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 1073741824>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, -2147483648>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 536870912>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 1073741824>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 268435456>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 536870912>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 134217728>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 268435456>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 67108864>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 134217728>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 33554432>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 67108864>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 16777216>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 33554432>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 8388608>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 16777216>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 4194304>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 8388608>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 2097152>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 4194304>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 1048576>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 2097152>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 524288>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 1048576>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 262144>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 524288>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 131072>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 262144>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 65536>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 131072>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 32768>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 65536>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 16384>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 32768>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 8192>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 16384>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 4096>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 8192>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 2048>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 4096>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 1024>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 2048>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 512>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 1024>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 256>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 512>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 128>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 256>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 64>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 128>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 32>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 64>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 16>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 32>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 8>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 16>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 4>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<0ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 8>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<0ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<1ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 4>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<1ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<1ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<1ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<1ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<1ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<1ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<1ul>::value'
+align_test.cpp:139:50:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<1ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<2ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<2ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<2ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<2ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<2ul>::value'
+align_test.cpp:140:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 4>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<2ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<2ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<2ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<2ul>::value'
+align_test.cpp:140:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<2ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<2ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<2ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<2ul>::value'
+align_test.cpp:140:50:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<2ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<2ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<2ul>::value'
+align_test.cpp:140:50:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<2ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<3ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<3ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<3ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<3ul>::value'
+align_test.cpp:141:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<2ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<3ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<3ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<3ul>::value'
+align_test.cpp:141:50:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<3ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<3ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<3ul>::value'
+align_test.cpp:141:50:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<3ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<4ul, 4>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<4ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<4ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<4ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<4ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<4ul>::value'
+align_test.cpp:142:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 8>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<4ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<4ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<4ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<4ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<4ul>::value'
+align_test.cpp:142:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<4ul, 4>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<4ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<4ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<4ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<4ul>::value'
+align_test.cpp:142:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<4ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<4ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<4ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<4ul>::value'
+align_test.cpp:142:50:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<4ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<4ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<4ul>::value'
+align_test.cpp:142:50:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<4ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<5ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<5ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<5ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<5ul>::value'
+align_test.cpp:143:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<4ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<5ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<5ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<5ul>::value'
+align_test.cpp:143:50:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<5ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<5ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<5ul>::value'
+align_test.cpp:143:50:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<5ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<6ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<6ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<6ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<6ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<6ul>::value'
+align_test.cpp:144:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<4ul, 4>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<6ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<6ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<6ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<6ul>::value'
+align_test.cpp:144:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<6ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<6ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<6ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<6ul>::value'
+align_test.cpp:144:50:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<6ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<6ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<6ul>::value'
+align_test.cpp:144:50:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<6ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<7ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<7ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<7ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<7ul>::value'
+align_test.cpp:145:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<6ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<7ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<7ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<7ul>::value'
+align_test.cpp:145:50:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<7ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<7ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<7ul>::value'
+align_test.cpp:145:50:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<7ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<8ul, 8>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<8ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<8ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<8ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<8ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<8ul>::value'
+align_test.cpp:146:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 16>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<8ul, 4>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<8ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<8ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<8ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<8ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<8ul>::value'
+align_test.cpp:146:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<8ul, 8>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<8ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<8ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<8ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<8ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<8ul>::value'
+align_test.cpp:146:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<8ul, 4>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<8ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<8ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<8ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<8ul>::value'
+align_test.cpp:146:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<8ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<8ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<8ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<8ul>::value'
+align_test.cpp:146:50:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<8ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<8ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<8ul>::value'
+align_test.cpp:146:50:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<8ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<9ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<9ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<9ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<9ul>::value'
+align_test.cpp:147:50:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<8ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<9ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<9ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<9ul>::value'
+align_test.cpp:147:50:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<9ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<9ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<9ul>::value'
+align_test.cpp:147:50:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<9ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<10ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<10ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<10ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<10ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<10ul>::value'
+align_test.cpp:148:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<8ul, 4>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<10ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<10ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<10ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<10ul>::value'
+align_test.cpp:148:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<10ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<10ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<10ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<10ul>::value'
+align_test.cpp:148:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<10ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<10ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<10ul>::value'
+align_test.cpp:148:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<10ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<11ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<11ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<11ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<11ul>::value'
+align_test.cpp:149:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<10ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<11ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<11ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<11ul>::value'
+align_test.cpp:149:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<11ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<11ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<11ul>::value'
+align_test.cpp:149:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<11ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<12ul, 4>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<12ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<12ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<12ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<12ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<12ul>::value'
+align_test.cpp:150:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<8ul, 8>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<12ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<12ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<12ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<12ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<12ul>::value'
+align_test.cpp:150:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<12ul, 4>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<12ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<12ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<12ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<12ul>::value'
+align_test.cpp:150:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<12ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<12ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<12ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<12ul>::value'
+align_test.cpp:150:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<12ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<12ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<12ul>::value'
+align_test.cpp:150:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<12ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<13ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<13ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<13ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<13ul>::value'
+align_test.cpp:151:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<12ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<13ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<13ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<13ul>::value'
+align_test.cpp:151:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<13ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<13ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<13ul>::value'
+align_test.cpp:151:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<13ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<14ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<14ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<14ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<14ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<14ul>::value'
+align_test.cpp:152:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<12ul, 4>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<14ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<14ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<14ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<14ul>::value'
+align_test.cpp:152:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<14ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<14ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<14ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<14ul>::value'
+align_test.cpp:152:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<14ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<14ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<14ul>::value'
+align_test.cpp:152:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<14ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<15ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<15ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<15ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<15ul>::value'
+align_test.cpp:153:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<14ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<15ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<15ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<15ul>::value'
+align_test.cpp:153:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<15ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<15ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<15ul>::value'
+align_test.cpp:153:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<15ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<16ul, 16>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<16ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<16ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<16ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<16ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<16ul>::value'
+align_test.cpp:154:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 32>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<16ul, 8>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<16ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<16ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<16ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<16ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<16ul>::value'
+align_test.cpp:154:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<16ul, 16>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<16ul, 4>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<16ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<16ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<16ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<16ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<16ul>::value'
+align_test.cpp:154:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<16ul, 8>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<16ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<16ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<16ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<16ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<16ul>::value'
+align_test.cpp:154:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<16ul, 4>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<16ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<16ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<16ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<16ul>::value'
+align_test.cpp:154:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<16ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<16ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<16ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<16ul>::value'
+align_test.cpp:154:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<16ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<16ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<16ul>::value'
+align_test.cpp:154:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<16ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<17ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<17ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<17ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<17ul>::value'
+align_test.cpp:155:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<16ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<17ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<17ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<17ul>::value'
+align_test.cpp:155:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<17ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<17ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<17ul>::value'
+align_test.cpp:155:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<17ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<18ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<18ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<18ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<18ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<18ul>::value'
+align_test.cpp:156:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<16ul, 4>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<18ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<18ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<18ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<18ul>::value'
+align_test.cpp:156:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<18ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<18ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<18ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<18ul>::value'
+align_test.cpp:156:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<18ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<18ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<18ul>::value'
+align_test.cpp:156:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<18ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<19ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<19ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<19ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<19ul>::value'
+align_test.cpp:157:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<18ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<19ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<19ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<19ul>::value'
+align_test.cpp:157:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<19ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<19ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<19ul>::value'
+align_test.cpp:157:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<19ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<20ul, 4>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<20ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<20ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<20ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<20ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<20ul>::value'
+align_test.cpp:158:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<16ul, 8>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<20ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<20ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<20ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<20ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<20ul>::value'
+align_test.cpp:158:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<20ul, 4>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<20ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<20ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<20ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<20ul>::value'
+align_test.cpp:158:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<20ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<20ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<20ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<20ul>::value'
+align_test.cpp:158:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<20ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<20ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<20ul>::value'
+align_test.cpp:158:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<20ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<21ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<21ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<21ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<21ul>::value'
+align_test.cpp:159:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<20ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<21ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<21ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<21ul>::value'
+align_test.cpp:159:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<21ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<21ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<21ul>::value'
+align_test.cpp:159:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<21ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<22ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<22ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<22ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<22ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<22ul>::value'
+align_test.cpp:160:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<20ul, 4>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<22ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<22ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<22ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<22ul>::value'
+align_test.cpp:160:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<22ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<22ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<22ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<22ul>::value'
+align_test.cpp:160:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<22ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<22ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<22ul>::value'
+align_test.cpp:160:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<22ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<23ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<23ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<23ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<23ul>::value'
+align_test.cpp:161:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<22ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<23ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<23ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<23ul>::value'
+align_test.cpp:161:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<23ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<23ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<23ul>::value'
+align_test.cpp:161:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<23ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<24ul, 8>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<24ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<24ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<24ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<24ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<24ul>::value'
+align_test.cpp:162:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<16ul, 16>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<24ul, 4>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<24ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<24ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<24ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<24ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<24ul>::value'
+align_test.cpp:162:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<24ul, 8>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<24ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<24ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<24ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<24ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<24ul>::value'
+align_test.cpp:162:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<24ul, 4>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<24ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<24ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<24ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<24ul>::value'
+align_test.cpp:162:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<24ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<24ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<24ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<24ul>::value'
+align_test.cpp:162:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<24ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<24ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<24ul>::value'
+align_test.cpp:162:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<24ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<25ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<25ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<25ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<25ul>::value'
+align_test.cpp:163:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<24ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<25ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<25ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<25ul>::value'
+align_test.cpp:163:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<25ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<25ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<25ul>::value'
+align_test.cpp:163:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<25ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<26ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<26ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<26ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<26ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<26ul>::value'
+align_test.cpp:164:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<24ul, 4>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<26ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<26ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<26ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<26ul>::value'
+align_test.cpp:164:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<26ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<26ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<26ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<26ul>::value'
+align_test.cpp:164:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<26ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<26ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<26ul>::value'
+align_test.cpp:164:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<26ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<27ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<27ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<27ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<27ul>::value'
+align_test.cpp:165:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<26ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<27ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<27ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<27ul>::value'
+align_test.cpp:165:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<27ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<27ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<27ul>::value'
+align_test.cpp:165:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<27ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<28ul, 4>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<28ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<28ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<28ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<28ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<28ul>::value'
+align_test.cpp:166:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<24ul, 8>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<28ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<28ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<28ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<28ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<28ul>::value'
+align_test.cpp:166:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<28ul, 4>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<28ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<28ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<28ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<28ul>::value'
+align_test.cpp:166:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<28ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<28ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<28ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<28ul>::value'
+align_test.cpp:166:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<28ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<28ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<28ul>::value'
+align_test.cpp:166:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<28ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<29ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<29ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<29ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<29ul>::value'
+align_test.cpp:167:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<28ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<29ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<29ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<29ul>::value'
+align_test.cpp:167:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<29ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<29ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<29ul>::value'
+align_test.cpp:167:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<29ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<30ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<30ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<30ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<30ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<30ul>::value'
+align_test.cpp:168:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<28ul, 4>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<30ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<30ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<30ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<30ul>::value'
+align_test.cpp:168:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<30ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<30ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<30ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<30ul>::value'
+align_test.cpp:168:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<30ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<30ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<30ul>::value'
+align_test.cpp:168:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<30ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<31ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<31ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<31ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<31ul>::value'
+align_test.cpp:169:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<30ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<31ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<31ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<31ul>::value'
+align_test.cpp:169:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<31ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<31ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<31ul>::value'
+align_test.cpp:169:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<31ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<32ul, 32>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<32ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<32ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<32ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<32ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<32ul>::value'
+align_test.cpp:170:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<0ul, 64>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<32ul, 16>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<32ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<32ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<32ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<32ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<32ul>::value'
+align_test.cpp:170:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<32ul, 32>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<32ul, 8>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<32ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<32ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<32ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<32ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<32ul>::value'
+align_test.cpp:170:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<32ul, 16>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<32ul, 4>':
+align_test.cpp:84:8:   recursively required from 'struct next_power_of_two<32ul, 2>'
+align_test.cpp:84:8:   required from 'struct next_power_of_two<32ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<32ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<32ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<32ul>::value'
+align_test.cpp:170:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<32ul, 8>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<32ul, 2>':
+align_test.cpp:84:8:   required from 'struct next_power_of_two<32ul, 1>'
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<32ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<32ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<32ul>::value'
+align_test.cpp:170:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<32ul, 4>'
+align_test.cpp: In instantiation of 'struct next_power_of_two<32ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<32ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<32ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<32ul>::value'
+align_test.cpp:170:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<32ul, 2>'
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<32ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<32ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<32ul>::value'
+align_test.cpp:170:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<32ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<32ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<32ul>::value'
+align_test.cpp:170:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<32ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'struct next_power_of_two<33ul, 1>':
+align_test.cpp:91:65:   required from 'struct round_up_power_of_two<33ul>'
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<33ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<33ul>::value'
+align_test.cpp:171:51:   required from here
+align_test.cpp:84:8: error: 'value' is not a member of 'next_power_of_two<32ul, 2>'
+ struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
+        ^
+align_test.cpp: In instantiation of 'struct round_up_power_of_two<33ul>':
+align_test.cpp:99:25:   required from 'const size_t minimum_possible_alignment<33ul>::pot'
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<33ul>::value'
+align_test.cpp:171:51:   required from here
+align_test.cpp:91:65: error: 'value' is not a member of 'next_power_of_two<33ul, 1>'
+     : std::integral_constant< size_t, is_power_of_two<x>::value ? x : next_power_of_two<x>::value >
+                                                                 ^
+align_test.cpp: In instantiation of 'const size_t minimum_possible_alignment<33ul>::pot':
+align_test.cpp:100:37:   required from 'const size_t minimum_possible_alignment<33ul>::value'
+align_test.cpp:171:51:   required from here
+align_test.cpp:99:25: error: 'value' is not a member of 'round_up_power_of_two<33ul>'
+     static const size_t pot = round_up_power_of_two<x>::value;
+                         ^
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = char; size_t = long unsigned int]':
+align_test.cpp:173:28:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = int; size_t = long unsigned int]':
+align_test.cpp:174:27:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = double; size_t = long unsigned int]':
+align_test.cpp:175:30:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = threepack<char>; size_t = long unsigned int]':
+align_test.cpp:177:39:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = threepack<int>; size_t = long unsigned int]':
+align_test.cpp:178:38:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = threepack<double>; size_t = long unsigned int]':
+align_test.cpp:179:41:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = fourpack<char>; size_t = long unsigned int]':
+align_test.cpp:181:38:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = fourpack<int>; size_t = long unsigned int]':
+align_test.cpp:182:37:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = fourpack<double>; size_t = long unsigned int]':
+align_test.cpp:183:40:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+align_test.cpp: In instantiation of 'bool align_by_type(size_t) [with T = fourpack<long long int>; size_t = long unsigned int]':
+align_test.cpp:185:43:   required from here
+align_test.cpp:128:36: error: no matching function for call to 'aligned_malloc(size_t&)'
+     T *ptr = aligned_malloc<T>(size);
+                                    ^
+align_test.cpp:128:36: note: candidate is:
+align_test.cpp:105:4: note: template<class T, long unsigned int alignment> T* aligned_malloc(size_t)
+ T* aligned_malloc(size_t size) {
+    ^
+align_test.cpp:105:4: note:   template argument deduction/substitution failed:
+make: *** [align_test] Error 1

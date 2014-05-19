@@ -1,0 +1,3 @@
+Example of aligned memory allocation on the heap using posix_memalign()
+
+Uses template-metaprogramming to ensure that attempts to allocate on invalid alignemnts are caught at compile time, and to automatically deduce valid alignemnts based on type information when none are provided.
