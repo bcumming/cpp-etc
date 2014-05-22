@@ -80,9 +80,9 @@ template <size_t x>
 struct is_power_of_two : std::integral_constant< bool, !(x&(x-1)) > {};
 
 // meta function that returns the smallest power of two that is strictly greater than x
-template <size_t x, unsigned char p=1>
+template <size_t x, size_t p=1>
 struct next_power_of_two : std::integral_constant< size_t, next_power_of_two<x-(x&p), (p<<1) >::value> {};
-template <unsigned char p>
+template <size_t p>
 struct next_power_of_two<0,p> : std::integral_constant<size_t, p> {};
 
 // metafunction that returns the smallest power of two that is greater than or equal to x
