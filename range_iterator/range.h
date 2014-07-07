@@ -16,13 +16,6 @@ class Range {
         : ibegin_(b), iend_(e)
     {}
 
-    /*
-    Range(Range const& other) 
-        : ibegin_(other.begin()),
-          iend_(other.end())
-    {}
-    */
-
     Range(Range const& other) = default;
 
     size_t length() const {
