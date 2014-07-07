@@ -8,7 +8,7 @@ class Range {
         : ibegin_(0), iend_(0)
     {}
 
-    Range(size_t n)
+    explicit Range(size_t n)
         : ibegin_(0), iend_(n)
     {}
 
