@@ -18,7 +18,7 @@ class Range {
 
     Range(Range const& other) = default;
 
-    size_t length() const {
+    size_t size() const {
         return iend_ - ibegin_;
     }
 
@@ -73,7 +73,7 @@ class SplitRange {
         assert(n>0);
 
         // add one to step_ if n does not evenly subdivide the target range
-        step_ = rng.length()/n + (rng.length()%n ? 1 : 0);
+        step_ = rng.size()/n + (rng.size()%n ? 1 : 0);
     }
 
     ///////////////////////////////////////////////////////////////////////////
