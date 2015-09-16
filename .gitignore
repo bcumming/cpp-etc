@@ -19,6 +19,7 @@
 *.exe
 *.out
 *.app
+test
 
 # vim swap files
 *.swp
