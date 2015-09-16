@@ -1,5 +1,42 @@
 #pragma once
 
+static size_t read_arg(int argc, char** argv, size_t index, int default_value) {
+    if(argc>index) {
+        try {
+            auto n = std::stoi(argv[index]);
+            if(n<0) {
+                return default_value;
+            }
+            return n;
+        }
+        catch (std::exception e) {
+            std::cout << "error : invalid argument \'" << argv[index]
+                << "\', expected a positive integer." << std::endl;
+            exit(-1);
+        }
+    }
+
+    return default_value;
+}
+
+__device__
+void bitstring(char *str, unsigned v) {
+    str[32]=0;
+    unsigned mask = 1;
+    for(int i=31; i>=0; --i, mask<<=1) {
+       str[i] = (v&mask ? '1' : '0');
+    }
+}
+
+// return the power of 2 that is _less than or equal_ to i
+__device__
+unsigned rounddown_power_of_2(unsigned i) {
+    // handle power of 2 and zero
+    if(__popc(i)<2) return i;
+
+    return 1u<<(31u - __clz(i));
+}
+
 __device__ __inline__
 double get_from_lane(double x, unsigned lane) {
         // split the double number into 2 32b registers.
