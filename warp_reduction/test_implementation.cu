@@ -1,6 +1,7 @@
 #define WITH_CUDA
 
 #include <iostream>
+#include <fstream>
 #include <random>
 #include <cstdio>
 
@@ -11,6 +12,7 @@
 #include "cudastreams/CudaEvent.h"
 #include "cudastreams/CudaStream.h"
 #include "util.hpp"
+#include "warp_reduction.hpp"
 
 using index_type = int;
 using host_index   = memory::HostVector<index_type>;
@@ -190,14 +192,7 @@ void print(host_index const& v) {
     }
 }
 
-int main(int argc, char** argv) {
-    size_t max_bucket_size = read_arg(argc, argv, 1, 10);
-
-    // input  array of length n
-    // output array of length m
-    // sorted indexes in p (length n)
-    constexpr auto n = 1<<25;
-
+host_index generate_index(int n, int max_bucket_size) {
     std::random_device rd;
     std::default_random_engine e(rd());
     std::uniform_int_distribution<int> rng(1, max_bucket_size);
@@ -206,7 +201,7 @@ int main(int argc, char** argv) {
     std::cout << " == array size " << n << " ==" << std::endl;
 
     // generate the index vector on the host
-    host_index ph(n);
+    host_index index(n);
 
     auto pos = 0;
     auto m = 0;
@@ -214,10 +209,42 @@ int main(int argc, char** argv) {
         auto increment = rng(e);
         auto final = std::min(pos+increment, n);
         while(pos<final) {
-            ph[pos++] = m;
+            index[pos++] = m;
         }
         ++m;
     }
+
+    return index;
+}
+
+host_index read_index(std::string fname) {
+    std::ifstream fid(fname);
+    if(!fid.is_open()) {
+        std::cerr << memory::util::red("error") << " : unable to open file "
+                  << memory::util::yellow(fname) << std::endl;
+        exit(1);
+    }
+
+    int n;
+    fid >> n;
+    std::cout << "loading index of length " << n << " from file " << fname << std::endl;
+    host_index index(n);
+    for(auto i=0; i<n; ++i) fid >> index[i];
+    return index;
+}
+
+int main(int argc, char** argv) {
+    int max_bucket_size = read_arg(argc, argv, 1, -1);
+
+    // input  array of length n
+    // output array of length m
+    // sorted indexes in p (length n)
+    auto ph =
+        max_bucket_size < 1 ?
+            read_index("index.txt")
+          : generate_index(1<<25, max_bucket_size);
+    const auto n = ph.size();
+    auto m = ph[n-1];
 
     // make reference solution
     host_vector solution(m);
@@ -255,7 +282,7 @@ int main(int argc, char** argv) {
 
     auto e1 = stream_compute.insert_event();
     e1.wait();
-    std::cout << "  " << e1.time_since(b1) << " seconds" << std::endl;
+    std::cout << "  naiive       " << e1.time_since(b1) << " seconds" << std::endl;
 
     test(solution, host_vector(out));
 
@@ -270,7 +297,7 @@ int main(int argc, char** argv) {
         (in.data(), out.data(), p.data(), n);
     auto e2 = stream_compute.insert_event();
     e2.wait();
-    std::cout << "  " << e2.time_since(b2) << " seconds" << std::endl;
+    std::cout << "  in shared    " << e2.time_since(b2) << " seconds" << std::endl;
     test(solution, host_vector(out));
 
     // method 3 : reduction in registers
@@ -278,12 +305,12 @@ int main(int argc, char** argv) {
     out(memory::all) = value_type{0};
 
     auto b3 = stream_compute.insert_event();
-    reduce_by_index3
+    gpu::reduce_by_index
         <<<blocks, threads_per_block>>>
         (in.data(), out.data(), p.data(), n);
     auto e3 = stream_compute.insert_event();
     e3.wait();
-    std::cout << "  " << e3.time_since(b3) << " seconds" << std::endl;
+    std::cout << "  in register  " << e3.time_since(b3) << " seconds" << std::endl;
 
     test(solution, host_vector(out));
 

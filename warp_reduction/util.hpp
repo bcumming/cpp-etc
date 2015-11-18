@@ -80,17 +80,6 @@ static double atomicAdd(double* address, double val)
 __device__ __inline__
 static double atomicSub(double* address, double val)
 {
-    using I = unsigned long long int;
-    I* address_as_ull = (I*)address;
-    I old = *address_as_ull, assumed;
-    do {
-        assumed = old;
-        old = atomicCAS(
-                address_as_ull,
-                assumed,
-                __double_as_longlong(__longlong_as_double(assumed) - val)
-        );
-    } while (assumed != old);
-    return __longlong_as_double(old);
+    return atomicAdd(address, -val);
 }
 
